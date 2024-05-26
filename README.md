@@ -1,7 +1,7 @@
-# seatitanium
+# ✨ BCNS-Site
 
-This is the official website of Minecraft Modded Server [Seati](https://seati.cc). The website is based on Vue 2.
+这是我的世界云竹网络互通服务器的官网。
 
-## License
+## 开源协议
 
-Just don't.
+GPL-3.0
