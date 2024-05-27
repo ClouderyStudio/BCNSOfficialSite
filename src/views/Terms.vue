@@ -3,7 +3,7 @@
 		<banner bg="https://seati.oss-cn-qingdao.aliyuncs.com/assets/images/9.jpg">
 			<template #title>周目信息与资源中心</template>
 			<template #subtitle>记录 & 下载</template>
-			<template #text>在此查看自 ST7 开始的每个周目的相关介绍和详细信息<br/>当资源可用时，此页面也会提供相应的下载链接
+			<template #text>在此查看自 6th 开始的每个周目的相关介绍和详细信息<br/>当资源可用时，此页面也会提供相应的下载链接
 			</template>
 		</banner>
 		<div class="terms-outer">
@@ -35,7 +35,7 @@
 							·
 							<span>
                                 <mdicon name="wrench"/>{{
-									!isMobile() ? '模组数量' : ''
+									!isMobile() ? '插件数量' : ''
 								}} {{ termList[i].information.modcount }}
                             </span>
 							·
@@ -107,7 +107,7 @@ function getDuration(from: string, to?: string) {
 }
 
 function getFileNameCN(filename: string) {
-	if (filename.includes('mod')) return '模组包'
+	if (filename.includes('mod')) return '插件包'
 	if (filename.includes('world')) return '存档'
 	if (filename.includes('pack')) return '整合包'
 	return ''
@@ -135,6 +135,7 @@ function getIcon(name: string) {
 </script>
 
 <style lang="less" scoped>
+@theme-st6: #F08BDE;
 @theme-st7: #F08B00;
 @theme-st8: #B20CBC;
 @theme-st9: #381E11;
@@ -173,6 +174,10 @@ function getIcon(name: string) {
 	font-family: HighwayGothic, sans-serif;
 	color: white;
 	font-stretch: normal;
+
+	&.st6 {
+		background: @theme-st6;
+	}
 
 	&.st7 {
 		background: @theme-st7;
@@ -258,6 +263,10 @@ function getIcon(name: string) {
 		}
 	}
 
+	&.st6 a {
+		background: #F08BDE
+	}
+
 	&.st7 a {
 		background: #F08B00
 	}
@@ -288,6 +297,10 @@ function getIcon(name: string) {
 }
 
 .meta {
+	&.st6 svg {
+		fill: @theme-st6;
+	}
+
 	&.st7 svg {
 		fill: @theme-st7;
 	}
@@ -326,6 +339,10 @@ function getIcon(name: string) {
 	}
 
 	padding: 1rem 1rem 1rem 2rem;
+
+	&.st6 {
+		background: rgba(@theme-st6, .2);
+	}
 
 	&.st7 {
 		background: rgba(@theme-st7, .2);

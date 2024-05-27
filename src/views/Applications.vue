@@ -37,7 +37,7 @@
         <banner bg="https://seati.oss-cn-qingdao.aliyuncs.com/assets/images/8.jpg">
             <template #title>审核结果及玩家列表</template>
             <template #subtitle>获取白名单</template>
-            <template #text>此处列出了自 ST11 起各个周目的审核结果，以及参与周目游戏的玩家列表</template>
+            <template #text>此处列出了自 第七周目测试服 起各个周目的审核结果，以及参与周目游戏的玩家列表</template>
         </banner>
         <div class="container">
             <div class="content typo">
@@ -47,11 +47,11 @@
                 </div>
                 <h1 class="primary-text" v-view.once="flowUp">页面简介</h1>
                 <p v-view.once="flowUp">
-                    此页面列出了尝试取得白名单的玩家的所有审核记录，以及他们在问卷中填写的一些信息（由本人选择是否公开）。每个玩家在每次参与问卷时的相关信息，会被归类在填写时正运行或预计运行的周目的标题之下。</p>
+                    此页面列出了尝试取得测试服白名单的玩家的所有审核记录，以及他们在问卷中填写的一些信息（由本人选择是否公开）。每个玩家在每次参与问卷时的相关信息，会被归类在填写时正运行或预计运行的周目的标题之下。</p>
                 <p v-view.once="flowUp">此页面上的信息不是实时更新的，会有一定的延迟。本人的信息根据本人意愿可随时修改，具体事宜请联系交流群内的管理员。</p>
-                <p v-view.once="flowUp">玩家个人的观点和提供的信息，不代表 Seati 的观点和信息。</p>
+                <p v-view.once="flowUp">玩家个人的观点和提供的信息，不代表 BCNS 的观点和信息。</p>
                 <div class="term" v-for="x in terms">
-                    <h1 class="primary-text" v-view.once="flowUp">ST{{ x.number }}</h1>
+                    <h1 class="primary-text" v-view.once="flowUp">{{ x.number }}th</h1>
                     <div class="appl-cards">
                         <div class="appl-card" v-view.once="applCardHook" v-for="(y, k) in x.applications">
                             <div class="appl-no"><span class="serif italic">Ticket</span> #{{
@@ -60,9 +60,9 @@
                                 {{ y.id }}
                             </div>
                             <div class="appl-ticket-detail" v-if="y.passed">
-                                <span class="serif"><span class="italic">Certified</span> ticket for Seati </span> ST{{
+                                <span class="serif"><span class="italic">Certified</span> ticket for BCNS </span> {{
                                     x.number
-                                }}
+                                }}th
                             </div>
                             <div class="appl-status" :class="y.passed ? 'passed' : 'not-passed'">
                                 <mdicon :name="y.passed ? 'check' : 'close'" />
@@ -94,8 +94,7 @@
 <script lang="ts" setup>
 import Banner from '@/components/Banner.vue';
 import { flowUp } from '@/fn';
-import applications11 from '@/applications-st11.json';
-import applications12 from '@/applications-st12.json'
+import applications7th from '@/applications-7th.json'
 import { ref, watch } from 'vue';
 
 interface Term {
@@ -119,12 +118,8 @@ interface QuicksearchResult {
 
 const terms: Term[] = [
     {
-        number: 11,
-        applications: (applications11 as Application[]).reverse()
-    },
-    {
-        number: 12,
-        applications: (applications12 as Application[]).reverse()
+        number: 7,
+        applications: (applications7th as Application[]).reverse()
     }
 ].reverse()
 

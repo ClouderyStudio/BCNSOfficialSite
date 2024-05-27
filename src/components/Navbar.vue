@@ -54,22 +54,14 @@ export default Vue.extend({
 					route: '/terms'
 				},
 				{
-					name: "知识库",
-					href: "https://wiki.seati.cc"
-				},
-				{
-					name: "服规",
-					href: "https://wiki.seati.cc/ti/%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A7%84%E5%88%99"
-				},
-				{
-					name: '审核结果',
+					name: '测试服审核结果',
 					route: '/applications'
 				}
 			],
 			active: false,
 			hamburgerOpen: false,
 			titles: {
-				home: "Everything Titanium",
+				home: "Everything Bamboo",
 				join: "立即加入",
 				server: "服务器状态",
 				about: "关于",
@@ -109,10 +101,10 @@ export default Vue.extend({
 		updateTitle(name: string) {
 			if (Object.keys(this.titles).includes(name)) {
 				// @ts-ignore
-				document.title = "Seati | " + this.titles[name];
+				document.title = "BCNS | " + this.titles[name];
 				const newTitle = document.createElement('title');
 				// @ts-ignore
-				newTitle.innerText = "Seati | " + this.titles[name];
+				newTitle.innerText = "BCNS | " + this.titles[name];
 				const currentTitle = document.head.querySelector('title')
 				if (currentTitle !== null) currentTitle.remove();
 				document.head.appendChild(newTitle);
@@ -255,7 +247,7 @@ export default Vue.extend({
 		}
 
 		&::after {
-			background: #2196f3;
+			background: #c71585;
 			width: 0;
 			content: " ";
 			display: block;

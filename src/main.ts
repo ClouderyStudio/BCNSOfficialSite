@@ -42,8 +42,8 @@ router.afterEach((to, from) => {
 Vue.mixin({
 	metaInfo: {
 		meta: [
-			{ property: 'og:title', content: 'Seati - Everything Titanium' },
-			{ property: 'og:site_name', content: 'Seati' },
+			{ property: 'og:title', content: 'BCNS - Everything Titanium' },
+			{ property: 'og:site_name', content: 'BCNS' },
 			{ property: 'og:type', content: 'website' },
 			{ property: 'og:url', content: 'https://seati.cc' },
 			{
@@ -52,20 +52,20 @@ Vue.mixin({
 			},
 			{
 				property: 'og:description',
-				content: '这里是 Seati 服务器官方网站，你可以在这里获取到关于 Seati 的介绍以及服务器的运行信息。'
+				content: '这里是 BCNS 服务器官方网站，你可以在这里获取到关于 BCNS 的介绍以及服务器的运行信息。'
 			},
 			{ name: 'twitter:card', content: 'summary' },
 			{ name: 'twitter:site', content: 'https://seati.cc' },
-			{ name: 'twitter:title', content: 'Seati - Everything Titanium' },
+			{ name: 'twitter:title', content: 'BCNS - Everything Titanium' },
 			{
 				name: 'twitter:description',
-				content: '这里是 Seati 服务器官方网站，你可以在这里获取到关于 Seati 的介绍以及服务器的运行信息。'
+				content: '这里是 BCNS 服务器官方网站，你可以在这里获取到关于 BCNS 的介绍以及服务器的运行信息。'
 			},
 			{ name: 'twitter:creator', content: '@subilan1995' },
-			{ itemprop: 'name', content: 'Seati | Everything Titanium' },
+			{ itemprop: 'name', content: 'BCNS | Everything Titanium' },
 			{
 				itemprop: 'description',
-				content: '这里是 Seati 服务器官方网站，你可以在这里获取到关于 Seati 的介绍以及服务器的运行信息。'
+				content: '这里是 BCNS 服务器官方网站，你可以在这里获取到关于 BCNS 的介绍以及服务器的运行信息。'
 			},
 			{
 				itemprop: 'image',
@@ -75,11 +75,11 @@ Vue.mixin({
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{
 				name: 'description',
-				content: '这里是 Seati 服务器官方网站，你可以在这里获取到关于 Seati 的介绍以及服务器的运行信息。'
+				content: '这里是 BCNS 服务器官方网站，你可以在这里获取到关于 BCNS 的介绍以及服务器的运行信息。'
 			},
 			{
 				name: 'theme-color',
-				content: '#2196f3'
+				content: '#c71585'
 			}
 		],
 		link: [

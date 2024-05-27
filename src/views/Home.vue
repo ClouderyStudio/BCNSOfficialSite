@@ -8,7 +8,7 @@
         从头到脚都是不一样的感觉。
       </template>
       <template #text>
-        在 Seati，你能够参与到游戏的整个流程。<br/>
+        在 BCNS，你能够参与到游戏的整个流程。<br/>
         从周目的建立，到持续的耕耘，再到最终的「周目评定」······
         <br/>
         在这里探索的你所留下的痕迹，亦将永存于宇宙千垣之间。
@@ -16,11 +16,11 @@
         <div class="simple-info">
           <div class="item">
             <mdicon name="alpha-n-box-outline"/>
-            <span><span class="no-mobile">当前周目</span> ST12</span>
+            <span><span class="no-mobile">当前周目</span> 6th</span>
           </div>
           <div class="item">
             <mdicon name="minecraft"/>
-            <span><span class="no-mobile">游戏版本</span> 1.16.5</span>
+            <span><span class="no-mobile">游戏版本</span> 1.20.x</span>
           </div>
           <div class="item">
             <mdicon name="information-outline"/>
@@ -41,7 +41,7 @@
         <div class="container">
           <div class="title-text" v-view.once="flowLeft">
             <div>
-              <div>带你一步步领略模组的</div>
+              <div>带你一步步领略插件的</div>
               <img class="title-img-1"
                    :src="'https://seati.oss-cn-qingdao.aliyuncs.com/assets/handwriting/大千世界.svg'"
                    draggable="false"/>
@@ -49,13 +49,13 @@
           </div>
           <div class="typo light section-1-text-1">
             <p v-view.once="flowUp">
-              <strong>模组是对原版游戏无与伦比的扩充。</strong>从我们最初接触模组开始，我们就已经清楚模组这一无可比拟的优势。它不受任何限制地向游戏中添加极为多样的内容，并跟随着作者的思绪形成一整套完美的新游戏体系。
+              <strong>插件是对原版游戏无与伦比的扩充。</strong>从我们最初接触插件开始，我们就已经清楚插件这一无可比拟的优势。它不受原版限制地向游戏中添加极为多样的内容，并跟随着作者的思绪形成一整套完美的新游戏体系。
             </p>
-            <p v-view.once="flowUp">模组如此多样，独乐不如众乐。</p>
+            <p v-view.once="flowUp">插件如此多样，独乐不如众乐。</p>
             <p v-view.once="flowUp">
-              <strong>钛海为你提供了这样一个平台：</strong>我们共同决定这个周目玩什么——按照少数服从多数的原则；我们共同确定什么模组适合、什么模组不适合这一周目；我们共同观察并改进每个周目；我们共同记录并永久保存每个周目的记忆······
+              <strong>云竹为你提供了这样一个平台：</strong>我们共同决定这个周目玩什么——按照少数服从多数的原则；我们共同确定什么插件适合、什么插件不适合这一周目；我们共同观察并改进每个周目；我们共同记录并永久保存每个周目的记忆······
             </p>
-            <p v-view.once="flowUp">我们——玩家和管理员——将会携你漫步模组的大千世界，在每一个地方都留下痕迹。</p>
+            <p v-view.once="flowUp">我们——玩家和管理员——将会携你漫步插件的大千世界，在每一个地方都留下痕迹。</p>
           </div>
         </div>
       </section>
@@ -84,10 +84,10 @@
               <div class="down">
                 <div class="typo light section-2-text">
                   <p v-view.once="flowUp">
-                    每个周目的主题或整合包候选项由管理员确定，玩家则进行决定性的一步——投票。<strong>最终所得票数最多的会成为本周目的主要游玩对象。</strong>遵从少数服从多数的原则。
+                    每个周目的主题候选项由管理员确定，玩家则进行决定性的一步——投票。<strong>最终所得票数最多的会成为本周目的主要游玩对象。</strong>遵从少数服从多数的原则。
                   </p>
-                  <p v-view.once="flowUp">你知道吗？<strong>投票</strong>是 Seati
-                    长期以来（包含其前身「SEATiDE」）所盛行的制度，旨在从玩家处选取本周目最适合的模组搭配——模组实在是太多了！
+                  <p v-view.once="flowUp">你知道吗？<strong>投票</strong>是 BCNS
+                    长期以来（包含其前身「云竹空岛」）所盛行的制度，旨在从玩家处选取本周目最适合的插件搭配——插件实在是太多了！
                   </p>
                 </div>
               </div>
@@ -130,11 +130,11 @@
               <div class="down">
                 <div class="typo light section-2-text">
                   <p v-view.once="flowUp">
-                    <strong>模组之众多，带来模组搭配之复杂。</strong>每个周目之后，我们都会提供专用的渠道来获取本周目游玩体验的信息。
+                    <strong>插件之众多，带来插件搭配之复杂。</strong>每个周目之后，我们都会提供专用的渠道来获取本周目游玩体验的信息。
                   </p>
                   <p v-view.once="flowUp">
-                    这些模组的搭配合理吗？模组是否真正符合了周目主题？稳定吗？<strong>或者...最为简单的——玩得开心吗？</strong>还是肝到爆了？！这些评价维度会成为每个周目的独特象征，同时大大帮助我们后续做得更好。更重要的是，这亦是你在
-                    Seati 留下的宝贵痕迹。</p>
+                    这些插件的搭配合理吗？插件是否真正符合了周目主题？稳定吗？<strong>或者...最为简单的——玩得开心吗？</strong>还是肝到爆了？！这些评价维度会成为每个周目的独特象征，同时大大帮助我们后续做得更好。更重要的是，这亦是你在
+                    BCNS 留下的宝贵痕迹。</p>
                 </div>
               </div>
             </div>
@@ -154,20 +154,20 @@
             <div class="item" v-view.once="scaleIn">
               <img class="performance-img"
                    :src="'https://seati.oss-cn-qingdao.aliyuncs.com/assets/core-i9.svg'" draggable="false"/>
-              <div>Gen 13</div>
+              <div>Gen 12</div>
               <div class="name">处理器</div>
             </div>
             <div class="item" v-view.once="scaleIn">
               <img class="performance-img" :src="'https://seati.oss-cn-qingdao.aliyuncs.com/assets/ddr4.svg'"
                    draggable="false"/>
-              <div>16 GB</div>
+              <div>12 GB</div>
               <div class="name">分配内存</div>
             </div>
             <div class="item" v-view.once="scaleIn">
               <img class="performance-img"
                    :src="'https://seati.oss-cn-qingdao.aliyuncs.com/assets/rotating-earth.gif'"
                    draggable="false"/>
-              <div>50M</div>
+              <div>25M</div>
               <div class="name">峰值带宽</div>
             </div>
             <div class="item" v-view.once="scaleIn">
@@ -193,14 +193,14 @@
           <div class="welcome">
             <div class="welcome-text typo light">
               <p v-view.once="flowUp"><strong>我们期待并欢迎每一位新船员的加入。</strong>...等等，为什么是「船员」？</p>
-              <p v-view.once="flowUp">Seati 是 Oasis 旗下独立运营的模组服务器，若要加入 Seati，需要首先成为 Oasis
+              <p v-view.once="flowUp">BCNS 是 Cloudery 旗下独立运营的插件服务器，若要加入 BCNS，需要首先成为 Cloudery
                 的船员。<strong>好消息是，目前
-                  Oasis 的加入并没有任何限制。</strong>而要获取 Seati 白名单需要完成相应的问卷。</p>
+                  Cloudery 的加入并没有任何限制。</strong>而要获取 BCNS 白名单需要完成相应的问卷。</p>
               <p v-view.once="flowUp"><strong>单击按钮可加入相应的交流群，在那里你可以获取最新、最准确的消息。</strong></p>
             </div>
             <div class="welcome-btns" v-view.once="flowUp">
-              <btn class="primary-a shadow arrow" href="https://qm.qq.com/cgi-bin/qm/qr?k=tcoJ_CF6AjAWGQS62TxGRIidea_4tqw7&jump_from=webapi" size="large" icon="arrow-right">立即加入 Seati 讨论群</btn>
-              <btn class="primary-o shadow arrow" href="https://qm.qq.com/cgi-bin/qm/qr?k=SCJedgwusNyNbwfz-ySVBu8am63VFSHF&jump_from=webapi" size="large" icon="arrow-right">立即加入 Oasis 讨论群</btn>
+              <btn class="primary-a shadow arrow" href="https://qm.qq.com/cgi-bin/qm/qr?k=tcoJ_CF6AjAWGQS62TxGRIidea_4tqw7&jump_from=webapi" size="large" icon="arrow-right">立即加入 BCNS 讨论群</btn>
+              <btn class="primary-o shadow arrow" href="https://qm.qq.com/cgi-bin/qm/qr?k=SCJedgwusNyNbwfz-ySVBu8am63VFSHF&jump_from=webapi" size="large" icon="arrow-right">立即加入 Cloudery 讨论群</btn>
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@
               <li>建议分配 RAM：>= 4GB</li>
               <li>正式开放日期：2024/01/16</li>
               <li>周目持续时间：{{ duration }}</li>
-              <li>模组个数：145</li>
+              <li>插件个数：145</li>
             </ul>
           </div>
         </div>
