@@ -10,7 +10,7 @@
 		<div class="container content">
 			<h1 class="primary-text" v-view.once="flowUp">BCNS 的历史</h1>
 			<p v-view.once="flowUp" class="typo">
-				<strong>BCNS</strong> 最初是在 2018
+				<strong>BCNS</strong> 最初是在 2021
 				年作为服主探索开服的一个简单项目出现的，其名称 <strong>云竹空岛</strong>。
 				由于服主并没有开展宣传工作，加之内容单一，并没有招来很多玩家。后来又由于服主的现实原因，一直处于搁置状态。云竹空岛 初期实际上只能算是挂了个名号。
 			</p>

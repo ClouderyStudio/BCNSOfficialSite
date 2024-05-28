@@ -212,16 +212,14 @@
                }">
         <div class="container">
           <div class="mod-card" v-view.once="scaleIn">
-            <div class="title" v-view.once="flowLeft">当前周目信息 - 2024/01/16 更新</div>
+            <div class="title" v-view.once="flowLeft">当前周目信息 - 2024/05/02 更新</div>
             <ul v-view.once="flowLeft">
-              <li>周目代号：ST12</li>
-              <li>周目整合包：龙之冒险</li>
-              <li>版本：Java 1.16.5</li>
-              <li>服务端：Forge 1.16.5-36.2.35</li>
-              <li>建议分配 RAM：>= 4GB</li>
-              <li>正式开放日期：2024/01/16</li>
+              <li>周目代号：6th</li>
+              <li>JE版本：1.20-1.20.4</li>
+              <li>BE版本：1.20.80</li>
+              <li>正式开放日期：2024/05/02</li>
               <li>周目持续时间：{{ duration }}</li>
-              <li>插件个数：145</li>
+              <li>插件个数：94</li>
             </ul>
           </div>
         </div>
@@ -335,7 +333,7 @@ export default Vue.extend({
       return count;
     },
     getDuration() {
-      let d = new Date().getTime() - new Date('2024-01-17 00:20').getTime();
+      let d = new Date().getTime() - new Date('2024-05-02 00:20').getTime();
       let x = d / 1000 / 60 / 60;
       let H = Math.floor(x);
       x = (x - H) * 60;
